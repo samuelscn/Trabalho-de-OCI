@@ -4,7 +4,7 @@ module mux_memoria_dados();
                result_ALU;
   output reg [31:0] Write_Data;
 
-  always@() begin
+  always@(MemtoReg or Exit_DataMem or result_ALU) begin
     if(MemtoReg == 0) begin
       Write_Data = result_ALU;
     end

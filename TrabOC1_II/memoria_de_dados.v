@@ -39,7 +39,7 @@ module memoria_de_dados(ReadMem, WriteMem, clk, result_ALU, Read_data02, Exit_Da
     memoria[31] = 32;
   end
 
-  always@)(posedge clk) begin
+  always@(posedge clk) begin
     if(ReadMem == 1) begin
       Exit_DataMem = memoria[result_ALU];
     end

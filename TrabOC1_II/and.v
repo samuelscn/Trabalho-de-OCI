@@ -1,7 +1,8 @@
-module and(Branch, Zero, Result_AND);
+module mux_and(Branch, Reg_Zero, Exit_AND);
   input Branch,
-        Zero;
-  output Result_AND;
+        Reg_Zero;
+  output Exit_AND;
 
-  assign Result_AND = Branch & Zero;
+  assign Exit_AND = Branch & Reg_Zero;
+
 endmodule

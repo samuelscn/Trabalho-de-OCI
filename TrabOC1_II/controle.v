@@ -1,4 +1,4 @@
-modulo Controle(Op_code, Op_ALU, RegDst, WriteReg, OrigALU, Branch_eq, Branch_ne, Jump, ReadMem, WriteMem, MemtoReg);
+module Controle(Op_code, Op_ALU, RegDst, WriteReg, OrigALU, Branch, Jump, ReadMem, WriteMem, MemtoReg);
 	input [5:0] Op_code;
 	output reg [1:0] Op_ALU;
 	output reg RegDst,
