@@ -1,4 +1,4 @@
-module mux_memoria_dados();
+module mux_memoria_dados(MemtoReg, Exit_DataMem, result_ALU, Write_Data);
   input MemtoReg;
   input [31:0] Exit_DataMem,
                result_ALU;

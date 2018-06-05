@@ -1,8 +1,8 @@
-module alu (data,saida_mux_registrador,saida_alu_control,zero,alu_resultado)
-	input[31:0] data ;
+module alu (data1,saida_mux_registrador,saida_alu_control,zero,alu_resultado);
+	input[31:0] data1 ;
 	input [31:0]saida_mux_registrador;
-	input [31:0]saida_alu_control;
-	output reg [3:0] alu_resultado;
+	input [3:0]saida_alu_control;
+	output reg [31:0] alu_resultado;
 	output reg zero;
 	always@(data1 or saida_mux_registrador or saida_alu_control) begin
 		if( saida_alu_control == 'b0000) begin

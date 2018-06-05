@@ -1,4 +1,4 @@
-module monta_instrucao(instrucao, Op_code, Register_rs, Register_rt, Register_rd, Shamt, Endereco);
+module monta_instrucao(instrucao, Op_code, Funct, Register_rs, Register_rt, Register_rd, Shamt, Endereco);
 	input [31:0] instrucao;
 	output [5:0] Op_code,
 					 Funct;
@@ -14,5 +14,5 @@ module monta_instrucao(instrucao, Op_code, Register_rs, Register_rt, Register_rd
 	assign	Register_rd = instrucao[15:11];
 	assign Shamt = instrucao[10:6];
 	assign Funct = instrucao[5:0];
-	assign Endereco = intrucao[15:0];
+	assign Endereco = instrucao[15:0];
 endmodule
