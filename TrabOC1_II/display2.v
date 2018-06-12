@@ -1,4 +1,4 @@
-module display2 (input wire [31:0]entrada, output reg [6:0] saida);
+module display (input wire [31:0] entrada, output reg [6:0] saida);
 
 	always @ (*)
 	begin

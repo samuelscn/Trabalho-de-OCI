@@ -1,9 +1,8 @@
-module memoria_de_dados(ReadMem, WriteMem, clk, result_ALU, Read_data02, Exit_DataMem);
+module memoria_de_dados(ReadMem, WriteMem, clk, result_ALU, Exit_DataMem);
   input ReadMem,
         WriteMem,
         clk;
-  input [31:0] result_ALU,
-               Read_data02;
+  input [31:0] result_ALU;
   output reg [31:0] Exit_DataMem;
   reg [31:0] memoria [0:31];
 
@@ -44,7 +43,7 @@ module memoria_de_dados(ReadMem, WriteMem, clk, result_ALU, Read_data02, Exit_Da
       Exit_DataMem = memoria[result_ALU];
     end
     if(WriteMem == 1) begin
-      memoria[result_ALU] = Read_data02;
+      memoria[result_ALU] = result_ALU;
     end
   end
 endmodule
