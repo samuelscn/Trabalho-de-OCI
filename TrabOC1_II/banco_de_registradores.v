@@ -23,7 +23,7 @@ module banco_registrador(RegWrite ,Numero_Reg1, Numero_Reg2, Numero_Reg_Escrita,
 		registradores[13] = 35;
 		registradores[14] = 40;
 		registradores[15] = 3;
-		registradores[16] = 4;
+		registradores[16] = 0;
 		registradores[17] = 5;
 		registradores[18] = 6;
 		registradores[19] = 46;

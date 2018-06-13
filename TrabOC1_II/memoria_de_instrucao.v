@@ -21,4 +21,4 @@ module memoria_de_instrucao(endereco, instrucao);
 			instrucao = memoria[31];
 		end
 	end
-endmodule
+endmodule 
